@@ -1,5 +1,5 @@
 # MindTheApi
-Script to generate markdown of API endpoints which then can be used to produce visual mindmap. Supports txt as well as Burp xml as input.
+Script to generate markdown of API endpoints which then can be used to produce visual mindmap to give a nice overview of the target. Supports txt as well as Burp xml as input.
 
 ## Why?
 After watching the bug bounty space develop and grow from the side I never noticed any such tool that visualizes the API by its endpoints and makes the researchers life easier to for example document APIs. Recently when I confronted a domain which had multiple big APIs put under it, I thought now is the time. Then the tool born.
@@ -37,6 +37,12 @@ Python code could return:
 ## POST checkout-content
 ```
 Another plus is the possibility to easily make notes for every endpoint by just writing after the correct heading line.
+Like this:
+```
+# callback
+## GET braintree
+returns a random cat image
+```
 <p>Visualised view:</p>
 <img src=visual.png width=500px/>
 
